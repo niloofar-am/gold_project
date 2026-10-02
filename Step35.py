@@ -1,8 +1,8 @@
 import requests
-
+import os
 
 headers = {
-    "X-API-Key": "YOUR_API_KEY"
+    "X-API-Key": os.getenv("SERVIX_API_KEY")
 }
 
 def get_gold_data(url):
